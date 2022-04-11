@@ -1,0 +1,355 @@
+/* https://fonts.google.com/ */
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+/* cabeçalho */
+header {
+	background: #BBBBBB;
+	padding: 20px 0;
+}
+
+/* relative: pega o ponto inicial (superior esquerdo) e pode se deslocar */
+.caixa {
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+}
+
+/* absolute: colocar o ponto inicial onde quiser */
+nav {
+	position: absolute;
+	top: 110px;
+	right: 0px;
+}
+
+nav li {
+	display: inline;
+	margin: 0 0 0 15px;
+}
+
+/* uppercase: maiúscula */
+nav a {
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold
+	font-size: 22px;
+	text-decoration: none;
+}
+
+/* hover: quando passa o mouse em cima */
+nav a:hover {
+	color: #C78C19;
+	text-decoration: underline;
+}
+
+.produtos {
+	width: 940px;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+
+/* vertical-align: alinhamento por cima e não por baixo, como é padrão */
+.produtos li {
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	vertical-align: top;
+	margin: 0 1.5%;
+	padding: 30px 20px;
+	box-sizing: border-box;
+	border: 2px solid #000000;
+	border-radius: 10px;
+}
+
+/* hover: quando passa o mouse em cima - é um pseudo elemento */
+.produtos li:hover {
+	border-color: #C78C19;
+}
+
+/* active: quando clica com o mouse - é um pseudo elemento */
+.produtos li:active {
+	border-color: #088C19;
+}
+
+/* hover: quando passa o mouse em cima */
+.produtos li:hover h2 {
+	font-size: 34px;
+}
+
+.produtos h2 {
+	font-size: 30px;
+	font-weight: bold
+}
+
+.produto-descricao {
+	font-size: 18px;
+}
+
+.produto-preco {
+	font-size: 22px;
+	font-weight: bold;
+	margin: 10px;
+}
+
+/* padding: margem interna */
+footer {
+	text-align: center;
+	background: url("bg.jpg");
+	padding-top: 40px;
+}
+
+/* margin: margem externa */
+.copyright {
+	color: #FFFFFF;
+	font-size: 13px;
+	margin: 20px 0 0;
+	padding-bottom: 30px;
+}
+
+main {
+
+}
+
+form {
+	margin: 40px 0;
+}
+
+form label, form legend {
+	display: block;
+	font-size: 20px;
+	margin: 0 0 10px;
+}
+
+.inputpadrao {
+	display: block;
+	margin: 0 auto 20px;
+	padding: 10px 25px;
+	width: 50%;
+}
+
+form label {
+	margin: 1em auto 0.5em;
+	width: 50%;
+}
+
+fieldset {
+	margin: 2.5em;
+}
+
+.legenda {
+	margin: 1em auto 0.5em;
+	width: 50%;
+}
+
+.horario {
+	margin: 1em auto 0.5em;
+	margin-left: 34em;
+}
+
+.checkbox {
+	margin: 20px auto;
+}
+
+/* transition: tipo o set interval */
+.enviar {
+	width: 40%;
+	margin: 2em 0 0 23em;
+	padding: 15px 0;
+	background: orange;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	transition: 1s all;
+	cursor: pointer;
+}
+
+/* hover: quando passa o mouse em cima */
+/* transform scale: aumenta 20% proporcionalmente */
+.enviar:hover {
+	background: darkorange;
+	transform: scale(1.2);
+}
+
+table {
+	margin: 20px auto 40px;
+}
+
+/* t head */
+thead {
+	background: #555555;
+	color: white;
+	font-weight: bold;
+}
+
+td, th {
+	border: 1px solid #000000;
+	padding: 8px 15px;
+}
+
+/* css da página inicial */
+.banner {
+	width: 100%;
+
+}
+
+/* clear serve para limpar o que vem para baixo do float */
+.titulo-principal {
+	text-align: center;
+	font-size: 2em;
+	margin: 0 0 1em;
+	clear: left;
+}
+
+/* primeira letra 
+.titulo-principal:first-letter {
+	font-weight: bold;
+} */
+
+/* cria um espaço onde o CSS pode ser utilizado antes do elemento 
+.titulo-principal:before {
+	content: "[ ";
+} */
+
+/* cria um espaço onde o CSS pode ser utilizado depois do elemento 
+.titulo-principal:after {
+	content: " ]";
+} */
+
+/* primeira linha
+p:first-line {
+	font-style: italic;
+}
+*/
+
+.principal {
+	padding: 3em 0;
+	background: #FEFEFE;
+	width: 940px;
+	margin: 0 auto;
+}
+
+.principal p {
+	margin: 0 0 1em;
+}
+
+/* peso da fonte */
+.principal strong {
+	font-weight: bold;
+}
+
+.principal em {
+	font-style: italic;
+}
+
+/* float: a imagem flutua, ficando os outros elementos em volta...e todos os elementos pra baixo são afetados pelo float */
+/* sequência do margin: cima, direita, baixo, esquerda */
+.utensilios {
+	width: 120px;
+	float: left;
+	margin: 0 20px 20px 0;
+}
+
+/* 3em é cima-baixo e o 0 é para os lados -- linear-gradient é o degradê (primeiro a inclinação em degrees, depois as cores com as suas %) */
+/* radial-gradiente é o degradê em círculo */
+.mapa {
+	padding: 3em 0;
+	background: linear-gradient(#FEFEFE, #888888);
+}
+
+.mapa-conteudo {
+	width: 940px;
+	margin: 0 auto;
+}
+
+.mapa p {
+	margin: 0 0 2em;
+	text-align: center;
+}
+
+.beneficios {
+	padding: 3em;
+	background: #888888;
+}
+
+.conteudo-beneficios {
+	width: 650px;
+	margin: 0 auto;
+}
+
+/* quando for usar 100% do width, os elementos no HTML precisam estar grudados, senão o css puxa os espaços tb e passa de 100% (</ul><img src="beneficios.jpg"*/
+.lista-beneficios {
+	width: 40%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* unicode star */
+.itens:before {
+	content: "🌟";
+}
+
+/* line height: altura da linha (dar um espaço entre os itens) */
+.itens {
+	line-height: 2.5;
+}
+
+/* é um pseudo elemento, pegando o primeiro dos elementos. Existe first, last e nth(). Nesse último, posso colocar tipo 2n dentro (vai pegar todos os elementos pares) */
+.itens:first-child {
+	font-weight: bold;
+}
+
+/* box-shadow é a sombra (eixo X, Y, sombra, blur, cor), e transition é tipo o setInterval */
+.imagem-beneficios {
+	width: 60%;
+	box-shadow: 10px 10px 5px 0 #000000;
+	transition: 400ms;
+}
+
+/* opacidade quando o mouse passar por cima */
+.imagem-beneficios:hover {
+	opacity: 0.3;
+}
+
+.video {
+	width: 560px;
+	margin: 2em auto;
+}
+
+/* telas até 480px, a gente entrega um layout diferente...essas são as media querys. Screen é pq é tela, mas existe print (impressora), etc */
+@media screen and (max-width: 480px) {
+	.caixa, .principal, .mapa-conteudo, .conteudo-beneficios, .video {
+		width: auto;
+	}
+	h1 {
+		text-align: center;
+	}
+	nav {
+		position: static;
+		text-align: center;
+	}
+	.lista-beneficios, .imagem-beneficios {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.produtos {
+		width: auto;
+		display: inline-block;
+		padding: 10px;
+	}
+	.produtos li {
+		width: 100%;
+	}
+
+	.horario {
+		margin-left: 6em;
+	}
+
+	.enviar {
+		margin-left: 7em
+	}
+}
